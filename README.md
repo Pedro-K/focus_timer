@@ -1,6 +1,6 @@
 # Aplicativo Focus Timer
 
-![preview](./.github/Preview.jpg)
+![preview](./.github/preview.jpg)
 
 > Trilha Explorer
 
