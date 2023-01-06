@@ -15,5 +15,4 @@ Aplicativo Focus Timer desenvolvido com JS para melhorar o seu foco e tempo gast
 - JavaScript
 - Git e Github
 
-
 pedro.kleinfelder@hotmail.com
