@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #121214;
+
+    --base-color: 100;
+
+    --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+    --primary-color: hsl(var(--base-color), 100%, 63%);
+
+    --text-color: #fff;
+
+    --bg-controls: rgba(66, 211, 255, 0.13);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Roboto-bold', sans-serif;
+    letter-spacing: 0;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    line-height: 2rem;
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+}
+
+main{
+    justify-self: center;
+    align-self: end;
+}
+
+main #timer{
+    font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+    display: flex;
+    line-height: 10.3rem;
+    margin-bottom: 1.6rem;
+}
+
+main div.controls{
+    background-color: var(--bg-primary-light);
+    padding: 2.2rem 3.4rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.2rem;
+    width: clamp(10rem, 10rem + 30vw, 22.8rem);
+    height: clamp(8rem, 5rem + 10vw, 10.8rem);
+}
+
+main div.controls button,
+footer button{
+    width: 6.4rem;
+    height: 6.4rem;
+    background-color: transparent;
+}
+
+main div.controls button,
+footer button{
+    opacity: 0;
+    display: none;
+    cursor: pointer;
+}
+
+main div.controls button.active,
+footer button.active{
+    display: initial;
+    opacity: 1;
+}
+
+footer{
+    justify-self: end;
+    align-self: end;
+    padding: 0 4rem 3.2rem 0;
+}
+
+button svg{
+    width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+button.play svg path,
+button.pause svg path,
+button.sound-off svg path{
+    fill: hsl(var(--base-color), 100%, 63%);
+}
